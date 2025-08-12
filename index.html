@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Debora Firme S. Vaz - Architectural Designer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Debora Firme S. Vaz</h1>
+        <p>Architectural Designer</p>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="portfolio.pdf" download>
+          Download Full Quality Portfolio
+        </a>
+        <a
+          class="btn"
+          href="https://www.linkedin.com/in/df-vaz/"
+          target="_blank"
+          rel="noopener"
+        >
+          View LinkedIn
+        </a>
+
+        <div class="zoom-controls">
+          <button class="btn zoom-btn" id="zoom-out">-</button>
+          <div class="zoom-info" id="zoom-level">100%</div>
+          <button class="btn zoom-btn" id="zoom-in">+</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="book-wrapper">
+        <div id="loading">Loading PDF...</div>
+        <div id="book"></div>
+        <div class="pan-hint" id="pan-hint">
+          Click and drag to pan around • Page flipping disabled when zoomed
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
